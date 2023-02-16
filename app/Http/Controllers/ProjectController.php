@@ -364,6 +364,7 @@ class ProjectController extends Controller
         $countOfExistingFE=count(FutureCapitalExpense::where('ProjectID',$id)->get());
         for($i =0;  $i < count($inputs['FutureCapitalExpenses']); $i++) {
             if($i<=$countOfExistingFE-1){
+                $FE[$i]->Year=$inputs['FutureCapitalExpenses'][$i]['Year'];
                 $FE[$i]->Hardware=$inputs['FutureCapitalExpenses'][$i]['Hardware'];
                 $FE[$i]->HardwareIT=$inputs['FutureCapitalExpenses'][$i]['HardwareIT'];
                 $FE[$i]->HardwareGencap=$inputs['FutureCapitalExpenses'][$i]['HardwareGencap'];
@@ -382,6 +383,7 @@ class ProjectController extends Controller
 
             }else{
                 $futurecapitalexpense = new FutureCapitalExpense();
+                $futurecapitalexpense->Year=$inputs['FutureCapitalExpenses'][$i]['Year'];
                 $futurecapitalexpense->Hardware = $inputs['FutureCapitalExpenses'][$i]['Hardware'];
                 $futurecapitalexpense->HardwareIT = $inputs['FutureCapitalExpenses'][$i]['HardwareIT'];
                 $futurecapitalexpense->HardwareGencap = $inputs['FutureCapitalExpenses'][$i]['HardwareGencap'];
@@ -393,7 +395,7 @@ class ProjectController extends Controller
                 $futurecapitalexpense->ExternalLabourGencap = $inputs['FutureCapitalExpenses'][$i]['ExternalLabourGencap'];
                 $futurecapitalexpense->InternalCapitalizedLabourNetwork = $inputs['FutureCapitalExpenses'][$i]['InternalCapitalizedLabourNetwork'];
                 $futurecapitalexpense->InternalCapitalizedLabourIT = $inputs['FutureCapitalExpenses'][$i]['InternalCapitalizedLabourIT'];
-                $futurecapitalexpense->InternalCapitalizedLabourGencap = $inputs['FutureCapitalExpenses'][$i]['InternalCapitalizedLabourNetworkGencap'];
+                $futurecapitalexpense->InternalCapitalizedLabourGencap = $inputs['FutureCapitalExpenses'][$i]['InternalCapitalizedLabourGencap'];
 
                 $futurecapitalexpense->ProjectID=$id;
                 $futurecapitalexpense->save();

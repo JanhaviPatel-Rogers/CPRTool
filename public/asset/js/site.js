@@ -175,46 +175,46 @@ function addRowToFutureCapex(element) {
     let newTr = `
         <tr>
             <td>
-                <input class="form-control input1" name="FutureCaptitalExpenses[${row}].Year"/>
+                <input class="form-control input1" name="FutureCapitalExpenses[${row}][Year]"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].Hardware" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][Hardware]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].HardwareIT" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][HardwareIT]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].HardwareGencap" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][HardwareGencap]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].Software" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][Software]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].SoftwareIT" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][SoftwareIT]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].SoftwareGencap" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][SoftwareGencap]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].ProfessionalServices" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][ExternalLabourNetwork]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].ThirdParty" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][ExternalLabourIT]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].ExternalLabourGencap" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][ExternalLabourGencap]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].InternalCapitalizedLabourNetwork" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][InternalCapitalizedLabourNetwork]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].InternalCapitalizedLabourIT" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][InternalCapitalizedLabourIT]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input value="0" class="form-control input1 future-captital-expenses-${row}" name="FutureCaptitalExpenses[${row}].InternalCapitalizedLabourGencap" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
+                <input value="0" class="form-control input1 future-capital-expenses-${row}" name="FutureCapitalExpenses[${row}][InternalCapitalizedLabourGencap]" onchange="updateTotal($('.future-captital-expenses-${row}'), $('#total-future-captital-expenses-${row}'))"/>
             </td>
             <td>
-                <input class="form-control input1" name="FutureCaptitalExpenses[${row}].Total" id="total-future-captital-expenses-${row}" readonly="readonly"/>
+                <input class="form-control input1" name="FutureCapitalExpenses[${row}][Total]" id="total-future-captital-expenses-${row}" readonly="readonly"/>
             </td>
             <td>
                 <span class="table-remove"><button type="button"
@@ -227,7 +227,7 @@ function addRowToFutureCapex(element) {
 
 function addRowToOpex(element) {
     let table = $(element).closest('div').find('table');
-    let row = table.find('tbody tr').length;
+    let row = table.find('tbody tr').length-1;
     let newTr = `
         <tr>
             <td>
@@ -604,7 +604,7 @@ function addRowToFundingTransfersComments(element) {
 
 function addRowToFutureDecom(element) {
     let table = $(element).closest('div').find('table');
-    let row = table.find('tbody tr').length;
+    let row = table.find('tbody tr').length-1;
     let newTr = `
         <tr>
             <td>
